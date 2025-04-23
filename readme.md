@@ -1,5 +1,5 @@
 # Sistema de Gestión de Contratos
-> Proyecto de gestión de contratos universitarios
+> Proyecto de gestión de contratos 
 
 ## 📋 Requisitos Previos
 
@@ -58,13 +58,7 @@ project.ejercicio16.udc/
 
 ## ⚙️ Configuración
 
-1. **Habilitar mod_rewrite**
-```bash
-sudo a2enmod rewrite
-sudo systemctl restart apache2
-```
-
-2. **Configurar Apache**
+1. **Configurar Apache**
 ````apache
 <Directory /var/www/html>
     Options Indexes FollowSymLinks
@@ -72,11 +66,6 @@ sudo systemctl restart apache2
     Require all granted
 </Directory>
 ````
-
-## 🔑 Credenciales por defecto
-
-- **Usuario:** admin
-- **Contraseña:** admin123
 
 ## 🛠️ Funcionalidades
 
@@ -98,32 +87,3 @@ sudo tail -f /var/log/apache2/error.log
 - Validación de formularios
 - Protección contra SQL Injection
 - Manejo de sesiones seguras
-
-## 👥 Contribución
-
-1. Fork del proyecto
-2. Crear rama feature (`git checkout -b feature/AmazingFeature`)
-3. Commit cambios (`git commit -m 'Add: nueva característica'`)
-4. Push a la rama (`git push origin feature/AmazingFeature`)
-5. Crear Pull Request
-
-## ⚠️ Solución de Problemas
-
-1. **Error 404**
-   - Verificar .htaccess
-   - Comprobar mod_rewrite
-   - Revisar permisos
-
-2. **Error de conexión DB**
-   - Verificar credenciales
-   - Comprobar servicio MySQL
-
-## 📞 Soporte
-
-Para soporte contactar a:
-- Email: soporte@ejemplo.com
-- Issues: GitHub Issues
-
-## 📄 Licencia
-
-Este proyecto está bajo la Licencia MIT - ver el archivo LICENSE.md para detalles.
